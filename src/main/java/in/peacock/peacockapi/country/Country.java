@@ -9,51 +9,43 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
-@Entity
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
-@Getter
-@Setter
-@ToString
+@Entity
 @Table(name="countries")
 public class Country {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int id;
-    public String name;
-    public String iso3;
-    public String numeric_code;
-    public String iso2;
-    public String phonecode;
-    public String capital;
-    public String currency;
-    public String currency_name;
-    public String currency_symbol;
-    public String tld;
+	private int id;
+    private String name;
+    private String iso3;
+    private String numeric_code;
+    private String iso2;
+    private String phonecode;
+    private String capital;
+    private String currency;
+    private String currency_name;
+    private String currency_symbol;
+    private String tld;
     @Column(name="native")
-    public String nativity;
-    public String region;
-    public Integer region_id;
-    public String subregion;
+    private String nativity;
+    private String region;
+    private Integer region_id;
+    private String subregion;
     @Nullable
-    public Integer subregion_id;
-    public String nationality;
-    public String timezones;
-    public String translations;
-    public Double latitude;
-    public Double longitude;
-    public String emoji;
-    public String emojiU;
-    public Date created_at;
-    public Date updated_at;
-    public int flag;
-    public String wikiDataId;
+    private Integer subregion_id;
+    private String nationality;
+    private String timezones;
+    private String translations;
+    private Double latitude;
+    private Double longitude;
+    private String emoji;
+    private String emojiU;
+    private Date created_at;
+    private Date updated_at;
+    private int flag;
+    private String wikiDataId;
 }
