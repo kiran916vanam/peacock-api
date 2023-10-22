@@ -22,30 +22,31 @@ public class Country {
 	private int id;
     private String name;
     private String iso3;
-    private String numeric_code;
-    private String iso2;
+    // private String numeric_code;
+    // private String iso2;
     private String phonecode;
     private String capital;
     private String currency;
-    private String currency_name;
-    private String currency_symbol;
-    private String tld;
-    @Column(name="native")
-    private String nativity;
-    private String region;
-    private Integer region_id;
-    private String subregion;
-    @Nullable
-    private Integer subregion_id;
-    private String nationality;
-    private String timezones;
-    private String translations;
+    private String currencyName;
+    private String currencySymbol;
+    // private String tld;
+    // @Column(name="native")
+    // private String nativity;
+    // private String region;
+    // private Integer region_id;
+    // private String subregion;
+    // @Nullable
+    // private Integer subregion_id;
+    // private String nationality;
+    // private String timezones;
+    // private String translations;
     private Double latitude;
     private Double longitude;
     private String emoji;
     private String emojiU;
-    private Date created_at;
-    private Date updated_at;
-    private int flag;
-    private String wikiDataId;
+    private Date createdAt;
+    private Date updatedAt;
+    @Column(name="flag")
+    private int notServing;
+    // private String wikiDataId;
 }
